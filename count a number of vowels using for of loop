@@ -1,0 +1,18 @@
+const countVowels=(str)=>
+{
+    let arr =['a','i','o','e','u'];
+    let str1 = str.toLowerCase();
+    let count  = 0;
+    for(let i of str1)
+    {  
+        for(let j of arr)
+        {
+            if(i == j)
+            {
+                count++;
+            }
+        }
+    }
+    return count;
+}
+ console.log(countVowels("RadhaKRRISHNA"));
